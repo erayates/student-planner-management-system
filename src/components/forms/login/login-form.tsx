@@ -87,7 +87,7 @@ export default function LoginForm() {
 
         <div className="flex flex-col">
           <Button asChild>
-            <Link href="/sign-up" className="bg-foreground hover:bg-foreground">
+            <Link href="/sign-up" className="bg-transparent hover:bg-transparent">
               Do you have not an account?
             </Link>
           </Button>

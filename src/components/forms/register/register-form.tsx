@@ -126,7 +126,10 @@ export default function RegisterForm() {
         ></FormField>
         <div className="flex flex-col">
           <Button asChild>
-            <Link href="/sign-in" className="bg-foreground hover:bg-foreground">
+            <Link
+              href="/sign-in"
+              className="bg-transparent hover:bg-transparent"
+            >
               Have you already an account?
             </Link>
           </Button>
