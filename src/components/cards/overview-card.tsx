@@ -5,18 +5,25 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import ResponsiveBarChart from "../charts/responsive-bar-chart";
 
-export default function OverviewCard() {
+export default function OverviewCard({
+  className,
+  title,
+  description,
+  children,
+}: {
+  className: string;
+  title: string;
+  description: string;
+  children: React.ReactNode;
+}) {
   return (
-    <Card className="w-[550px]">
+    <Card className={className}>
       <CardHeader>
-        <CardTitle className="flex justify-between text-lg">Overview</CardTitle>
-        <CardDescription>Solved questions date by date</CardDescription>
+        <CardTitle className="flex justify-between text-lg">{title}</CardTitle>
+        <CardDescription>{description}</CardDescription>
       </CardHeader>
-      <CardContent>
-        <ResponsiveBarChart />
-      </CardContent>
+      <CardContent>{children}</CardContent>
     </Card>
   );
 }

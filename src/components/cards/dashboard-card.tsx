@@ -20,7 +20,7 @@ export function DashboardCard({
   icon: React.ReactNode;
 }) {
   return (
-    <Card className="w-auto">
+    <Card className="flex-1">
       <CardHeader>
         <CardTitle className="flex justify-between text-lg items-center">
           {title} {icon}
