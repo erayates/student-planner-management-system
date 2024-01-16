@@ -17,7 +17,7 @@ export default function DashboardLayout({
     <>
       <Sidebar />
       <NavigationBar />
-      <main className="ml-[26rem] p-4">{children}</main>
+      <main className="ml-[26rem] pl-4 pr-8 py-4">{children}</main>
     </>
   );
 }
